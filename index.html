@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script async src="script.js"></script>
+  </head>
+  <body>
+          <!-- sidebar starts -->
+    <div class="sidebar">
+
+      <i class="fab fa-twitter"></i>
+
+      <div class="sidebarOption active">
+        <span class="material-icons"> home </span>
+        <h2>Home</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> tag </span>
+        <h2>Explore</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> notifications_none </span>
+        <h2>Notifications</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> mail_outline </span>
+        <h2>Messages</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> bookmark_border </span>
+        <h2>Bookmarks</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> list_alt </span>
+        <h2>Lists</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> perm_identity </span>
+        <h2>Profile</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> more_horiz </span>
+        <h2>More</h2>
+      </div>
+
+      <button class="sidebar__twitter">
+        <span class="material-icons reset-btn">history_edu</span>
+      </buttton>
+    </div>
+         <!-- sidebar ends -->
+    
+        <!-- middle-content starts -->
+      <div class="feed">
+        <div class="feed__header">
+            <h2>Home</h2>
+        </div>
+        <!-- tweetBox starts -->
+        <div class="tweetBox">
+            <form>
+                <div class="tweetbox__input">
+                  <a href="#"><img src="./img/photo.jpeg" alt="avatar-img"></a>
+                  <input id="text_input" type="text" placeholder="what's happening?">
+                </div>
+                <button class="tweetBox__tweetButton">Tweet</button>
+            </form>
+        </div>
+        <!-- tweetBox ends -->
+
+        <!-- post starts -->
+         <div class="post_parent">
+         <div class="post">
+          <div class="post__avatar_and_body">
+            <div class="post__header">
+              <div class="user__info">
+              <div class="post__avatar">
+                <a href="#"><img src="./img/photo.jpeg" alt="avatar-img"></a>
+              </div>
+              <div class="post__body">
+                <div class="upper__part">
+                    <a href="#"><h3 class="my_account">Simaa AbuMousa</h3></a> 
+                    <span class="material-icons post__badge">verified</span>
+                    <span class="hash__name">
+                      @simaa99
+                    </span>
+                </div>
+                  <p class="post-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus expedita sint rem</p>
+              </div>
+            </div>
+              <div class="post__img">
+                <img src="./img/post-img.jpg" alt="post-img">
+              </div>
+            </div>
+          </div>
+          <div class="post__footer">
+                <span class="material-icons repeat-icon" data-id-name="1">repeat</span>  
+                <span class="material-icons love-icon">favorite_border</span>
+                <span class="material-icons share-icon">publish</span>
+          </div>
+         </div>
+        </div> 
+        <!-- post ends -->
+    </div>
+        <!-- middle-content ends -->
+
+    <!-- Trends starts -->
+    <div class="widgets">
+      <div class="widgets__input">
+        <span class="material-icons widgets__searchIcons">search</span>
+        <input type="text" placeholder="Search Tweet">
+      </div>
+      <div class="widgets__widgetContainer">
+        <div class="trends__container">
+          <h1>Trends</h1>
+          <span class="material-icons trend__settings">settings</span>
+        </div>
+        <div class="trend__element">
+          <h3>#trend-one</h3>
+          <h5 class="tweets__number">40K Tweets</h5>
+        </div>
+        <div class="trend__element">
+          <h3>#trend-two</h3>
+          <h5 class="tweets__number">190K Tweets</h5>
+        </div>
+        <div class="trend__element">
+          <h3>#trend-three</h3>
+          <h5 class="tweets__number">10K Tweets</h5>
+        </div>
+        <h3 class="show__more">Show more</h3>
+      </div>
+    </div>
+    <!-- Trends ends -->
+    
+  </body>
+  </html>
